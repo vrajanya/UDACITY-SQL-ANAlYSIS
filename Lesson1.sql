@@ -5,9 +5,9 @@ SELECT occurred_at,account_id,channel FROM web_events Limit 15;
 -- Write a query to return the top 5 orders in terms of largest total_amt_usd. Include the id, account_id, and total_amt_usd.
 -- Write a query to return the lowest 20 orders in terms of smallest total_amt_usd. Include the id, account_id, and total_amt_usd.
 
-SELECT id, occurred_at,total_amt_usd FROM orders ORDER BY occurred_at ASC LIMIT 10;
-SELECT id, account_id,total_amt_usd FROM orders ORDER BY total_amt_usd DESC LIMIT 5;
-SELECT id, account_id,total_amt_usd FROM orders ORDER BY total_amt_usd ASC LIMIT 20;
+SELECT id, occurred_at,total_amt_usd FROM orders ORDER BY occurred_at ASC LIMIT 100;
+SELECT id, account_id,total_amt_usd FROM orders ORDER BY total_amt_usd DESC LIMIT 27;
+SELECT id, account_id,total_amt_usd FROM orders ORDER BY total_amt_usd ASC LIMIT 100;
 
 -- Write a query that displays the order ID, account ID, and total dollar amount for all the orders, sorted first by the account ID (in ascending order), and then by the total dollar amount (in descending order).
 
