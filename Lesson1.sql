@@ -86,5 +86,6 @@ SELECT * FROM orders WHERE standard_qty = 0 AND (poster_qty > 1000 OR gloss_qty 
 SELECT name FROM accounts WHERE (name LIKE 'C%' OR name LIKE 'W%')
 AND (primary_poc NOT LIKE 'eana%')
 AND (primary_poc LIKE '%ANA%' OR primary_poc LIKE '%Ana%');
+--AND (primary_poc LIKE '%ANA%' OR primary_poc LIKE '%Ana%');
 
 
